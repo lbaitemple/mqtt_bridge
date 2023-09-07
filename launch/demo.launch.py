@@ -4,11 +4,7 @@ from launch import LaunchDescription
 from launch_ros.actions import Node
 def generate_launch_description():
     ld = LaunchDescription()
-    config = os.path.join(
-        get_package_share_directory('mqtt_bridge'),
-        'config',
-        'aws_iot_params.yaml'
-        )
+    config = '/config/aws_iot_params.yaml'
     '''config1 = os.path.join(
         get_package_share_directory('mqtt_bridge'),
         'config',
