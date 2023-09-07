@@ -16,5 +16,5 @@ mqtt_bridge_node:
       bridge2: ["mqtt_bridge.bridge:MqttToRosBridge","std_msgs.msg:Bool","ping","/pong"]
       bridge3: ["mqtt_bridge.bridge:RosToMqttBridge","std_msgs.msg:String","/echo","echo"]
       bridge4: ["mqtt_bridge.bridge:MqttToRosBridge","std_msgs.msg:String","echo","/back"]
-      bridge5: ["mqtt_bridge.bridge:RosToMqttBridge","std_msgs.msg:String","/private/echo","~/echo"]
-      bridge6: ["mqtt_bridge.bridge:MqttToRosBridge","std_msgs.msg:String","~/echo", "/private/back"]
+      bridge5: ["mqtt_bridge.bridge:RosToMqttBridge","std_msgs.msg:String","/dance_config","dance_config_robot"]
+      bridge6: ["mqtt_bridge.bridge:MqttToRosBridge","std_msgs.msg:String","dance_config", "/dance_config"]
